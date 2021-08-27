@@ -66,3 +66,9 @@ end
 
 valor = map(512,0,1024,0,180)
 puts valor
+
+nombre = "Vitoko"
+telefono = "123456789"
+mail = "vitoko@vitoko.com"
+
+puts "#{nombre} tu telefono es #{telefono} y tu correo es #{mail}"
