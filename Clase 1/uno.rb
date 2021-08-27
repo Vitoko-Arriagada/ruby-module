@@ -137,7 +137,7 @@ puts numero > 10 ? "Si":"No"
 =end
 
 # 0..5 = [0,1,2,3,4,5]
-
+=begin
 for i in 10..15
     puts "El valor local es #{i}"
 end
@@ -180,4 +180,26 @@ while i < num do
     i += 1
     break if i == 2
 end
+=end
+def accion operacion, numero1, numero2
+    case operacion
+    when "suma"
+        numero1 + numero2
+    when "resta"
+        numero1 - numero2
+    when "multiplicacion"
+        numero1 * numero2
+    when "division"
+        if numero2 == 0
+            "Segundo parametro no puede ser 0"
+        else
+            (numero1.to_f / numero2)
+        end
+    end
+end
 
+
+puts accion "suma", 4, 7
+puts accion "resta", 4, 7
+puts accion "multiplicacion", 4, 7
+puts accion "division", 4, 7
