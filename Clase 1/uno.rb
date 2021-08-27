@@ -82,6 +82,8 @@ puts "#{nombre} tu telefono es #{telefono} y tu correo es #{mail}"
 
 =end
 
+
+=begin
 name = gets.chop
 
 if name == "vitoko"
@@ -131,3 +133,51 @@ end
 
 numero = 2
 puts numero > 10 ? "Si":"No"
+
+=end
+
+# 0..5 = [0,1,2,3,4,5]
+
+for i in 10..15
+    puts "El valor local es #{i}"
+end
+
+puts "\r\n"
+
+for i in 10..15
+    puts "El valor local es #{i}"
+    break if i == 13
+end
+
+puts "\r\n"
+
+for i in 10..15
+    next if i == 13
+    puts "El valor local es #{i}"
+end
+
+for i in 0..100
+    next if i == 13
+    puts i if i % 2 === 0
+end
+
+for i in 0..100
+    next if i == 13
+    puts i unless i % 2 === 0
+end
+
+i = 0
+num = 5
+while i < num do
+    puts "[1] Dentro del cuble i = #{i}"
+    i += 1
+end
+
+i = 0
+num = 5
+while i < num do
+    puts "[2] Dentro del cuble i = #{i}"
+    i += 1
+    break if i == 2
+end
+
